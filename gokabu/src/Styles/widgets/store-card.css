@@ -1,0 +1,27 @@
+.store-card-wrapper {
+    box-shadow: 7px 7px 20px #f7f7f7;
+    border-radius: 10px;
+    margin-top: 40px;
+    display: flex;
+    height: 18vh;
+}
+
+.store-image-block {
+    width: 40vw;
+    overflow: hidden;
+}
+
+.store-image-block img {
+    height: 100%;
+    width: auto;
+}
+
+.store-name-block {
+    font-size: 13pt;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.store-distance-block, .store-rating-block {
+    margin-top: 7px;
+}
