@@ -12,6 +12,13 @@ const StoreCard = (props) => {
                     (!props.rating ? 5 : props.rating)
                 }</div>
             </div>
+            <div className="store-rules-block">
+                {props.rules.map((item, index) => {
+                    return (
+                        <span className="store-rules-item" key={index}>{item.desc}</span>
+                    );
+                })}
+            </div>
         </div>
     );
 }

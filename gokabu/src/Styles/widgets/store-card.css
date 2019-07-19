@@ -4,10 +4,17 @@
     margin-top: 40px;
     display: flex;
     height: 18vh;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+
+.store-card-wrapper:hover {
+    box-shadow: 7px 7px 20px #e6edfa;
 }
 
 .store-image-block {
     width: 40vw;
+    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -24,4 +31,18 @@
 
 .store-distance-block, .store-rating-block {
     margin-top: 7px;
+    color: #cfd8e8;
+}
+
+.store-rules-block {
+    margin-top: 23px;
+}
+
+.store-rules-item {
+    margin-left: 10px;
+    font-size: 10pt;
+    padding: 4px 7px 4px 7px;
+    border-radius: 3px;
+    background-color: #cfd8e8;
+    color: #899ec4;
 }

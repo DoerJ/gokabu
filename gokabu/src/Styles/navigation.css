@@ -3,6 +3,10 @@
     cursor: pointer;
 }
 
+.nav-bar-wrapper {
+    padding-top: 20px;
+}
+
 .nav-item-nearby-eats-clicked, .nav-item-hot-clicked, .nav-item-recommendation-clicked,
 .nav-item-promo-clicked {
     font-weight: bold;
