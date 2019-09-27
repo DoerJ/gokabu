@@ -1,13 +1,14 @@
 .search-bar-block {
-    height: 7vh;
-    line-height: 7vh;
+    height: 60px;
+    display: flex;
+    align-items: center;
     background-color: #FFE270;
 }
 
 .search-bar-block input {
     border: none;
     outline: none;
-    height: 4vh;
-    width: 20vw;
+    height: 30px;
+    width: 30vw;
     margin-left: 5vw;
 }

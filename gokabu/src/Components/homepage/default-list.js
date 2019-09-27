@@ -18,7 +18,7 @@ class DefaultList extends Component {
 
     componentDidMount = () => {
         this.loadDefaultList();
-        // scroll listener
+        // load scroll listener
         window.addEventListener('scroll', debounce(() => {
             if(window.scrollY + window.innerHeight === document.documentElement.scrollHeight) {
                 this.setState({bottomTouched: true});
@@ -49,12 +49,11 @@ class DefaultList extends Component {
                 listLoaded: true
             });
         }, (error) => {
-            // error callback
+
         });
     }
 
     mappingDefaultList = () => {
-        //console.log(this.state.defaultList)
         return this.state.defaultList.map((item, index) => {
             return (
                 <StoreCard name={item.store_name}
@@ -63,7 +62,7 @@ class DefaultList extends Component {
                     image={item.store_front_img}
                     rules={item.rules}
                     key={index}
-                    />
+                />
             );
         })
     }
@@ -79,7 +78,7 @@ class DefaultList extends Component {
                 )}
                 <div className="loading-zone-container">
                     {this.state.bottomTouched ? (
-                        <div className="loading-prompt">剩余列表加载中...</div>
+                        <div className="loading-prompt">Loading remainings...</div>
                     ) : (<div></div>)}
                 </div>
             </div>

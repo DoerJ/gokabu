@@ -1,21 +1,12 @@
 import React, {Component} from 'react';
 import '../../Styles/widgets/search-bar.css';
 
-class SearchBar extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {searchType: null};
-    }
-
-    render() {
-        return (
-            <div className="search-bar-wrapper">
-                <div className="search-bar-block">
-                    <input type="text" ref="search-type" placeholder={this.props.placeholder}/>
-                </div>
+export default (props) => {
+    return (
+        <div className="search-bar-wrapper">
+            <div className="search-bar-block">
+                <input type="text" placeholder={props.placeholder}/>
             </div>
-        );
-    }
+        </div>
+    );
 }
-
-export default SearchBar;

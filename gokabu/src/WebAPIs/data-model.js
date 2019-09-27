@@ -1,4 +1,4 @@
-const API = 'http://eats-user-api-dev.kabueats.ca/api/stores/nearby?geoHash=49.1358909,-123.10220849999999';
+const API = process.env.REACT_APP_GOKABU_API_KEY;
 
 var request = (method, api, params, success, error) => {
     fetch(api)

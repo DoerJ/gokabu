@@ -1,14 +1,15 @@
-.nav-item-container {
-    margin-left: 5vw;
-    cursor: pointer;
-}
-
 .nav-bar-wrapper {
-    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.nav-item-container {
+    margin: 0 20px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
 .nav-item-nearby-eats-clicked, .nav-item-hot-clicked, .nav-item-recommendation-clicked,
 .nav-item-promo-clicked {
-    font-weight: bold;
+    text-shadow: 1px;
     color: #6f82a1;
 }
